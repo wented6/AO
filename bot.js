@@ -8,7 +8,7 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = 'A';
+const prefix = '*';
 client.login(process.env.BOT_TOKEN);
 
 client.on('ready', function() {
@@ -236,7 +236,7 @@ function search_video(query, cb) {
 }///////////////////////////////////////////////
 
 
-const adminprefix = "AA";  
+const adminprefix = "*";  
 const devs = ['513787884449431572','372063259051950091'];  
 client.on('message', message => {  
   var argresult = message.content.split(` `).slice(1).join(' ');  
